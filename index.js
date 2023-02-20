@@ -7,16 +7,20 @@ const GET_PREDICT_ENDPOINT =
   "https://srddev-image-caption.hf.space/api/queue/status/";
 
 const image = path.join(__dirname, "./image.jpg");
+const logfile = path.join(__dirname, "./logs.txt");
 const file = fs.readFileSync(image, { encoding: "base64" });
 
-const enqueue_payload = {
+// const test_base64 = path.join(__dirname, "./testbase64.txt");
+// const test_base64_file = fs.readFileSync(test_base64, { encoding: "utf8" });
+
+const payload_enqueue = {
   action: "predict",
   fn_index: 0,
-  session_hash: "rjb4tut9dkj",
+  session_hash: "",
   data: ["data:image/png;base64," + file],
 };
 
-const get_caption_payload = {
+const payload_getcaption = {
   hash: "",
 };
 
@@ -24,7 +28,7 @@ const customHeaders = {
   "Content-Type": "application/json",
 };
 
-function makeid(length) {
+function makeSessionId(length) {
   let result = "";
   const characters =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -37,16 +41,36 @@ function makeid(length) {
   return result;
 }
 
+// function base64toBlob(base64Data, contentType) {
+//   contentType = contentType || "";
+//   let sliceSize = 1024;
+//   const byteCharacters = Buffer.from(base64Data, "base64");
+//   const bytesLength = byteCharacters.length;
+//   const slicesCount = Math.ceil(bytesLength / sliceSize);
+//   let byteArrays = new Array(slicesCount);
+
+//   for (let sliceIndex = 0; sliceIndex < slicesCount; ++sliceIndex) {
+//     let begin = sliceIndex * sliceSize;
+//     let end = Math.min(begin + sliceSize, bytesLength);
+
+//     let bytes = new Array(end - begin);
+//     for (let offset = begin, i = 0; offset < end; ++i, ++offset) {
+//       bytes[i] = byteCharacters[offset].charCodeAt(0);
+//     }
+//     byteArrays[sliceIndex] = new Uint8Array(bytes);
+//   }
+//   return new Blob(byteArrays, { type: contentType });
+// }
+
 async function enqueue() {
-  enqueue_payload.session_hash = makeid(11);
+  payload_enqueue.session_hash = makeSessionId(11);
   try {
     const response = await fetch(ENQUEUED_ENDPOINT, {
       method: "POST",
       headers: customHeaders,
-      body: JSON.stringify(enqueue_payload),
+      body: JSON.stringify(payload_enqueue),
     });
     const body = await response.json();
-    // console.log(body);
     return body;
   } catch (error) {
     console.error(error);
@@ -58,13 +82,13 @@ function delay(number) {
 }
 
 async function getImageCaption(enqueue_resp) {
-  get_caption_payload.hash = enqueue_resp.hash;
+  payload_getcaption.hash = enqueue_resp.hash;
 
   while (true) {
     const response = await fetch(GET_PREDICT_ENDPOINT, {
       method: "POST",
       headers: customHeaders,
-      body: JSON.stringify(get_caption_payload),
+      body: JSON.stringify(payload_getcaption),
     });
     if (!response.ok) {
       throw new Error(`HTTP error, status = ${response.status}`);
@@ -79,11 +103,29 @@ async function getImageCaption(enqueue_resp) {
   }
 }
 
+function getDateFormat() {
+  const d = new Date();
+  const date = d.getDate() < 10 ? `0${d.getDate()}` : d.getDate();
+  const month = d.getMonth() < 10 ? `0${d.getMonth()}` : d.getMonth();
+  return `[${date}-${month}-${d.getFullYear()}]`;
+}
+
 (async () => {
   try {
     const enq_body = await enqueue();
     const getPredict = await getImageCaption(enq_body);
-    console.log("getImageCaption", getPredict);
+    // const mock = {
+    //   data: ["people playing a game of frisbee "],
+    //   duration: 4.164351463317871,
+    //   average_duration: 13.139440035492909,
+    // };
+
+    const datestamp = getDateFormat();
+    fs.appendFileSync(
+      logfile,
+      datestamp + ": " + JSON.stringify(getPredict.data) + "\n"
+    );
+    // saveImage();
   } catch (err) {
     console.error(err);
   }
