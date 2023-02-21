@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="24mm"
+   viewBox="0 0 100 24"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="logo_white.svg"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.0000001"
+     inkscape:cx="222.24999"
+     inkscape:cy="82.499998"
+     inkscape:window-width="1512"
+     inkscape:window-height="916"
+     inkscape:window-x="0"
+     inkscape:window-y="38"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g2263" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1418"
+       transform="translate(1.5304087)">
+      <g
+         id="g2263"
+         transform="translate(-0.23278901,-13)">
+        <g
+           id="g884"
+           transform="matrix(0.44854727,0,0,0.44854727,26.85706,13.786318)">
+          <path
+             style="fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             d="M 32.699198,18.214698 V 31.785302 H 60.507821 V 18.214698 Z"
+             id="path1183"
+             sodipodi:nodetypes="ccccc" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Sukhumvit Set';-inkscape-font-specification:'Sukhumvit Set Bold';stroke-width:0.264583"
+             x="4.9729748"
+             y="28.037405"
+             id="text236"><tspan
+               sodipodi:role="line"
+               id="tspan234"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Sukhumvit Set';-inkscape-font-specification:'Sukhumvit Set Bold';stroke-width:0.264583"
+               x="4.9729748"
+               y="28.037405"
+               dx="0 0 0 0.66740692 0.66740692 0.66740692 0 0 0.66740692 0.66740692"><tspan
+   style="fill:#999999"
+   id="tspan396"
+   dx="0 0.66740692 0.66740692"><tspan
+   style="fill:#000000"
+   id="tspan524">t</tspan>in</tspan>out<tspan
+   style="fill:#999999"
+   id="tspan398"
+   dx="0.66740692 0.66740692">in</tspan>ou</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:'Sukhumvit Set';-inkscape-font-specification:'Sukhumvit Set Bold';stroke-width:0.264583"
+             x="60.699802"
+             y="28.037405"
+             id="text236-4"><tspan
+               sodipodi:role="line"
+               id="tspan234-4"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Sukhumvit Set';-inkscape-font-specification:'Sukhumvit Set Bold';stroke-width:0.264583"
+               x="60.699802"
+               y="28.037405"
+               dx="0.66740692 0 0 0.66740692 0.66740692">t<tspan
+   style="fill:#999999"
+   id="tspan402-1"
+   dx="0.66740692 0.66740692">in</tspan>out</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

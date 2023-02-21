@@ -61,6 +61,25 @@ function writeFile(path, contents) {
   });
 }
 
+function getReadmeContent(_data, _data2, it) {
+  const date = getDateFormat();
+
+  // remove array newline after formatting json.
+  const data = JSON.stringify(_data, null, 2).replace(
+    /("data": \[\n(\s)+|(\s)+\])/g,
+    (a) => a.replace(/\s+/g, "")
+  );
+  const data2 = JSON.stringify(_data2, null, 2);
+  const iterations = it;
+  return `### [\`tinou\`](/about.md)\n\n<table><tr><td colspan="2"><img src="./images/${getDateFormat()}_output.png"></td></tr></tr><tr colspan="2"><tr></tr><td>\n\n\`\`\`json\n${data}\n\`\`\`\n</td><td>\n\n\`\`\`json\n${data2}\n\`\`\`\n</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : ${iterations}</td></table>`;
+}
+
+function getLogContent(caption) {
+  return `\`\`\`json\n"${getDateFormat()}":${JSON.stringify(
+    caption.data
+  )}\n\`\`\`\n`;
+}
+
 module.exports = {
   makeSessionId,
   getDateFormat,
@@ -68,4 +87,6 @@ module.exports = {
   base64toBlob,
   saveImage,
   writeFile,
+  getReadmeContent,
+  getLogContent,
 };

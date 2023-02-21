@@ -1,9 +1,13 @@
-name: digital-resonance
+name: tinou
 
-on: workflow_dispatch
+# on: workflow_dispatch
+on:
+  schedule:
+    # Runs "at 19.00 everyday" (see https://crontab.guru)
+    - cron: "50 6 * * *"
 
 jobs:
-  cron:
+  processor:
     runs-on: ubuntu-latest
 
     permissions:
@@ -19,6 +23,8 @@ jobs:
         id: date
         run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
       - uses: actions/checkout@v3
+        with:
+          ref: main
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
@@ -26,11 +32,24 @@ jobs:
           cache: "npm"
       - run: npm ci
       - run: node index.js
-      - uses: stefanzweifel/git-auto-commit-action@v4
+
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "Automated Change" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
         with:
-          commit_message: Automated Change
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
-          commit_options: "--no-verify --signoff"
-          commit_author: Author <actions@github.com>
-          status_options: "--untracked-files=no"
-          skip_dirty_check: true
+
+      # - uses: stefanzweifel/git-auto-commit-action@v4
+      #   with:
+      #     commit_message: Automated Change
+      #     branch: main
+      #     commit_options: "--no-verify --signoff"
+      #     commit_author: Author <actions@github.com>
+      #     status_options: "--untracked-files=no"
+      #     skip_dirty_check: true

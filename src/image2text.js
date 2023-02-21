@@ -9,7 +9,6 @@ const GET_PREDICT_ENDPOINT =
 const IMG_BASE_PATH = "../images";
 const filename = IMG_BASE_PATH + "/" + getDateFormat(-1) + "_output.png";
 const image = path.join(__dirname, filename);
-const logfile = path.join(__dirname, "../logs.txt");
 const file = fs.readFileSync(image, { encoding: "base64" });
 const sessionId = makeSessionId(11);
 
@@ -69,12 +68,6 @@ async function image2text() {
   try {
     const enq_body = await enqueue();
     const getPredict = await getImageCaption(enq_body);
-    const datestamp = getDateFormat();
-    fs.appendFileSync(
-      logfile,
-      "[" + datestamp + "]" + ": " + JSON.stringify(getPredict.data) + "\n"
-    );
-    // saveImage();
     return getPredict;
   } catch (err) {
     console.error(err);
