@@ -10,6 +10,9 @@ jobs:
       matrix:
         node-version: [18.x]
     steps:
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
@@ -18,3 +21,6 @@ jobs:
           cache: "npm"
       - run: npm ci
       - run: node index.js
+      - run: git add -A
+      - run: git commit -m "🤖 update images and logs-${{ steps.date.outputs.date }}"
+      - run: git push origin main
