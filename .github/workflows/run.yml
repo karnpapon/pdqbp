@@ -21,6 +21,11 @@ jobs:
           cache: "npm"
       - run: npm ci
       - run: node index.js
-      - run: git add -A
-      - run: git commit -m "🤖 update images and logs-${{ steps.date.outputs.date }}"
-      - run: git push origin main
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Automated Change
+          branch: main
+          commit_options: "--no-verify --signoff"
+          commit_author: Author <actions@github.com>
+          status_options: "--untracked-files=no"
+          skip_dirty_check: true
