@@ -53,10 +53,7 @@ function text2image(caption_data, sessionId) {
       console.log("complete message=", msg.success);
       saveImage(
         msg.output.data[0],
-        path.join(
-          OUTPUT_IMAGE_PATH,
-          getDateFormat() + "_" + "output" + "_" + sessionId + ".png"
-        )
+        path.join(OUTPUT_IMAGE_PATH, getDateFormat() + "_" + "output.png")
       );
     }
   });

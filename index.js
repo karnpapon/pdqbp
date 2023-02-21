@@ -2,7 +2,7 @@ const { image2text, sessionId } = require("./src/image2text");
 const text2image = require("./src/text2image");
 const { writeFile, getDateFormat } = require("./utils");
 
-let readMeContents = `## [digital-resonance](/README.md)\n\n<img src="./images/${getDateFormat()}_output.png">\n`;
+let readMeContents = `## [digital-resonance](/README.md)\n\n${getDateFormat()}\n\n<img src="./images/${getDateFormat()}_output.png">\n`;
 
 (async () => {
   try {
