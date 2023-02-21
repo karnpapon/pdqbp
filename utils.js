@@ -13,11 +13,11 @@ function makeSessionId(length) {
   return result;
 }
 
-function getDateFormat() {
+function getDateFormat(offsetDate = 0) {
   const d = new Date();
   const date = d.getDate() < 10 ? `0${d.getDate()}` : d.getDate();
   const month = d.getMonth() < 10 ? `0${d.getMonth()}` : d.getMonth();
-  return `${d.getFullYear()}-${month}-${date}`; // ISO 8601 standard.
+  return `${d.getFullYear()}-${month}-${date + offsetDate}`; // ISO 8601 standard.
 }
 
 function delay(number) {
@@ -55,10 +55,17 @@ function saveImage(data, path) {
   });
 }
 
+function writeFile(path, contents) {
+  fs.writeFile(path, contents, "utf8", function (err) {
+    console.log(err);
+  });
+}
+
 module.exports = {
   makeSessionId,
   getDateFormat,
   delay,
   base64toBlob,
   saveImage,
+  writeFile,
 };

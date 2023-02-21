@@ -1,7 +1,3 @@
-# Digital Resonance
+## [digital-resonance](/README.md)
 
-an experimental art project
-
-## notes
-
-generated image name use `ISO 8601` standard for the sake of management.
+<img src="./images/2023-01-20_output.png">

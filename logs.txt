@@ -3,3 +3,4 @@
 [2023-01-21]: {"data":["people playing a game of frisbee "],"duration":4.066065073013306,"average_duration":12.25884107993117}
 [2023-01-21]: {"data":["people playing a game of frisbee "],"duration":4.4910900592803955,"average_duration":12.24125138843786}
 [2023-01-21]: {"data":["people playing a game of frisbee "],"duration":12.871321678161621,"average_duration":11.98390503747012}
+[2023-01-21]: {"data":["a crowd of people are gathered around a painting "],"duration":5.025593519210815,"average_duration":11.959218531236836}
