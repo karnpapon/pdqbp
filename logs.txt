@@ -1,1 +1,4 @@
-
+[2023-01-21]: {"data":["people playing a game of frisbee "],"duration":6.776559114456177,"average_duration":12.373967916889278}
+[2023-01-21]: {"data":["people playing a game of frisbee "],"duration":3.5450570583343506,"average_duration":12.277205022591183}
+[2023-01-21]: {"data":["people playing a game of frisbee "],"duration":4.066065073013306,"average_duration":12.25884107993117}
+[2023-01-21]: {"data":["people playing a game of frisbee "],"duration":4.4910900592803955,"average_duration":12.24125138843786}
