@@ -50,9 +50,9 @@ function text2image(caption_data, sessionId) {
     if (msg.msg === "send_data") {
       const payload_data = {
         data: [
-          "",
           caption_data[0],
-          "",
+          caption_data[0],
+          caption_data[0],
           _params["left-region"],
           _params["center-region"],
           _params["right-region"],

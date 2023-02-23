@@ -8,6 +8,7 @@ partially, draw an inspiration from [ChatGPT Is a Blurry JPEG of the Web](https:
 
 # how it works.
 
+<img src="./images/workflows-init.svg"/>
 <img src="./images/workflows.svg"/>
 
 - an initial http request will be made to create image from initial text.
