@@ -1,23 +1,9 @@
 const fs = require("fs");
 const path = require("path");
-const { makeSessionId, getDateFormat, delay } = require("../utils");
+const { makeSessionId, delay } = require("../utils");
+const { ENQUEUED_ENDPOINT, GET_PREDICT_ENDPOINT } = require("./const");
 
-const ENQUEUED_ENDPOINT =
-  "https://srddev-image-caption.hf.space/api/queue/push/";
-const GET_PREDICT_ENDPOINT =
-  "https://srddev-image-caption.hf.space/api/queue/status/";
-const IMG_BASE_PATH = "../images";
-const filename = IMG_BASE_PATH + "/" + getDateFormat(-1) + "_output.png";
-const image = path.join(__dirname, filename);
-const file = fs.readFileSync(image, { encoding: "base64" });
 const sessionId = makeSessionId(11);
-
-const payload_enqueue = {
-  action: "predict",
-  fn_index: 0,
-  session_hash: "",
-  data: ["data:image/png;base64," + file],
-};
 
 const payload_getcaption = {
   hash: "",
@@ -27,7 +13,19 @@ const customHeaders = {
   "Content-Type": "application/json",
 };
 
-async function enqueue() {
+async function enqueue(inputDate) {
+  const imgBasePath = "../images";
+  const filename = imgBasePath + "/" + inputDate + "_output.png";
+  const image = path.join(__dirname, filename);
+  const file = fs.readFileSync(image, { encoding: "base64" });
+
+  const payload_enqueue = {
+    action: "predict",
+    fn_index: 0,
+    session_hash: "",
+    data: ["data:image/png;base64," + file],
+  };
+
   payload_enqueue.session_hash = sessionId;
   try {
     const response = await fetch(ENQUEUED_ENDPOINT, {
@@ -45,7 +43,7 @@ async function enqueue() {
 async function getImageCaption(enqueue_resp) {
   payload_getcaption.hash = enqueue_resp.hash;
 
-  while (true) {
+  for (;;) {
     const response = await fetch(GET_PREDICT_ENDPOINT, {
       method: "POST",
       headers: customHeaders,
@@ -64,9 +62,9 @@ async function getImageCaption(enqueue_resp) {
   }
 }
 
-async function image2text() {
+async function image2text(inputDate) {
   try {
-    const enq_body = await enqueue();
+    const enq_body = await enqueue(inputDate);
     const getPredict = await getImageCaption(enq_body);
     return getPredict;
   } catch (err) {

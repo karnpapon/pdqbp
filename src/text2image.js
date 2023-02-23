@@ -1,13 +1,22 @@
-const WebSocket = require("ws");
+const fs = require("fs");
 const path = require("path");
+const WebSocket = require("ws");
+const { marked } = require("marked");
 const rand = require("random-seed").create();
-const { saveImage, getDateFormat } = require("../utils");
+const {
+  saveImage,
+  getDateFormat,
+  buildReadmeContent,
+  buildLogsContent,
+} = require("../utils");
+const { WS_ENDPOINT } = require("./const");
 
-const WS_ENDPOINT = "wss://albarji-mixture-of-diffusers.hf.space/queue/join";
-const OUTPUT_IMAGE_PATH = path.join(__dirname, "../images");
+const outputImagePath = path.join(__dirname, "../images");
+const readmeFile = path.join(__dirname, "../README.md");
+const logfile = path.join(__dirname, "../logs.md");
 
 const guildance_scale = rand(8);
-const _params = {
+const params = {
   "left-region": guildance_scale,
   "center-region": guildance_scale,
   "right-region": guildance_scale,
@@ -16,19 +25,13 @@ const _params = {
   "random-seed": rand(9999999),
 };
 
-function text2image(caption_data, sessionId) {
+function text2image(caption, sessionId) {
   const ws = new WebSocket(WS_ENDPOINT);
 
   ws.on("error", console.error);
 
   ws.on("open", function open() {
     console.log("[ws::open]");
-    // _params["left-region"] = 8;
-    // _params["center-region"] = 8;
-    // _params["right-region"] = 8;
-    // _params["overlap-region"] = 256;
-    // _params["diffusion-steps"] = 50;
-    // _params["random-seed"] = rand(9999999);
   });
 
   ws.on("close", function close() {
@@ -50,15 +53,15 @@ function text2image(caption_data, sessionId) {
     if (msg.msg === "send_data") {
       const payload_data = {
         data: [
-          caption_data[0],
-          caption_data[0],
-          caption_data[0],
-          _params["left-region"],
-          _params["center-region"],
-          _params["right-region"],
-          _params["overlap-region"],
-          _params["diffusion-steps"],
-          _params["random-seed"],
+          caption.data.data[0],
+          caption.data.data[0],
+          caption.data.data[0],
+          params["left-region"],
+          params["center-region"],
+          params["right-region"],
+          params["overlap-region"],
+          params["diffusion-steps"],
+          params["random-seed"],
         ],
         fn_index: 1,
         session_hash: sessionId,
@@ -70,13 +73,26 @@ function text2image(caption_data, sessionId) {
       console.log("complete message=", msg.success);
       saveImage(
         msg.output.data[0],
-        path.join(OUTPUT_IMAGE_PATH, getDateFormat() + "_" + "output.png")
+        path.join(outputImagePath, getDateFormat() + "_" + "output.png")
       );
+
+      // update `README.md` & `logs.md` only if process is completed.
+      fs.appendFileSync(logfile, buildLogsContent(caption));
+      const l = fs.readFileSync(logfile, { encoding: "utf8" });
+      const logsData = marked.lexer(l);
+      const iterations = logsData.length;
+      const readmeContent = buildReadmeContent(
+        caption,
+        iterations,
+        logsData,
+        params
+      );
+      fs.writeFileSync(readmeFile, readmeContent);
     }
   });
 }
 
 module.exports = {
   text2image,
-  params: _params,
+  params,
 };
