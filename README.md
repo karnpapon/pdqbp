@@ -5,8 +5,8 @@
 ```json
 {
   "data":["a woman in a black dress standing next to a mirror "],
-  "duration": 6.9552717208862305,
-  "average_duration": 11.225997860721572
+  "duration": 5.320585489273071,
+  "average_duration": 11.20641603880818
 }
 ```
 </td><td>
@@ -18,7 +18,7 @@
   "right-region": 5,
   "overlap-region": 256,
   "diffusion-steps": 50,
-  "random-seed": 4085014
+  "random-seed": 9119508
 }
 ```
-</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 3</td></table>
+</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 1</td></table>
