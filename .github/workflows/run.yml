@@ -3,8 +3,8 @@ name: tinou
 # on: workflow_dispatch
 on:
   schedule:
-    # Runs "at 19.00 everyday" (see https://crontab.guru)
-    - cron: "50 6 * * *"
+    # Runs "at 13.00 everyday" (see https://crontab.guru)
+    - cron: "0 6 * * *"
 
 jobs:
   processor:
