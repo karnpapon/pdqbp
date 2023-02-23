@@ -4,7 +4,7 @@ name: tinou
 on:
   schedule:
     # Runs "at 13.00 everyday" (see https://crontab.guru)
-    - cron: "30 9 * * *"
+    - cron: "52 9 * * *"
 
 jobs:
   processor:
