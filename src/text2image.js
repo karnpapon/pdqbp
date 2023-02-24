@@ -21,8 +21,8 @@ const params = {
   "center-region": guidance_scale,
   "right-region": guidance_scale,
   "overlap-region": rand.intBetween(128, 320),
-  "diffusion-steps": rand.intBetween(1, 50),
-  "random-seed": rand.intBetween(999, 9999999),
+  "diffusion-steps": 50,
+  "random-seed": rand(9999999),
 };
 
 function text2image(caption, sessionId) {
