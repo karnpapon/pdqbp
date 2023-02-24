@@ -20,7 +20,7 @@ const params = {
   "left-region": guidance_scale,
   "center-region": guidance_scale,
   "right-region": guidance_scale,
-  "overlap-region": rand.intBetween(128, 320),
+  "overlap-region": 320,
   "diffusion-steps": 50,
   "random-seed": rand(9999999),
 };
