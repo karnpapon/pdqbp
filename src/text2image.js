@@ -15,14 +15,14 @@ const outputImagePath = path.join(__dirname, "../images");
 const readmeFile = path.join(__dirname, "../README.md");
 const logfile = path.join(__dirname, "../logs.md");
 
-const guildance_scale = rand(8);
+const guidance_scale = rand(8);
 const params = {
-  "left-region": guildance_scale,
-  "center-region": guildance_scale,
-  "right-region": guildance_scale,
-  "overlap-region": 256,
-  "diffusion-steps": 50,
-  "random-seed": rand(9999999),
+  "left-region": guidance_scale,
+  "center-region": guidance_scale,
+  "right-region": guidance_scale,
+  "overlap-region": rand.intBetween(128, 320),
+  "diffusion-steps": rand.intBetween(1, 50),
+  "random-seed": rand.intBetween(999, 9999999),
 };
 
 function text2image(caption, sessionId) {

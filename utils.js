@@ -75,7 +75,7 @@ function getReadmeContent(_data, _data2, it, date) {
 }
 
 function buildReadmeContent(caption, iterations, logsData, params) {
-  const title = "### [`pdqb`](/about.md)\n\n";
+  const title = "### [`pdqbp`](/about.md)\n\n";
   let bodies = "";
   const entry = buildReadmeInitialBody();
 

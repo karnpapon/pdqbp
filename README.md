@@ -1,4 +1,4 @@
-### [`pdqb`](/about.md)
+### [`pdqbp`](/about.md)
 
 <table><tr><td colspan="2"><img src="./images/2023-01-23_output.png"></td></tr></tr><tr colspan="2"><tr></tr><td>
 

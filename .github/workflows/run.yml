@@ -1,4 +1,4 @@
-name: pdqb
+name: pdqbp
 
 # on: workflow_dispatch
 on:
