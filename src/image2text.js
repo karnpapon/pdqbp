@@ -13,17 +13,17 @@ const customHeaders = {
   "Content-Type": "application/json",
 };
 
-async function enqueue(inputDate) {
+async function enqueue(prevData) {
   const imgBasePath = "../images";
-  const filename = imgBasePath + "/" + inputDate + "_output.png";
-  const image = path.join(__dirname, filename);
-  const file = fs.readFileSync(image, { encoding: "base64" });
+  const prevFileName = imgBasePath + "/" + prevData + "_output.png";
+  const prevImg = path.join(__dirname, prevFileName);
+  const prevImageAsBase64 = fs.readFileSync(prevImg, { encoding: "base64" });
 
   const payload_enqueue = {
     action: "predict",
     fn_index: 0,
     session_hash: "",
-    data: ["data:image/png;base64," + file],
+    data: ["data:image/png;base64," + prevImageAsBase64],
   };
 
   payload_enqueue.session_hash = sessionId;
@@ -62,9 +62,9 @@ async function getImageCaption(enqueue_resp) {
   }
 }
 
-async function image2text(inputDate) {
+async function image2text(prevInputDate) {
   try {
-    const enq_body = await enqueue(inputDate);
+    const enq_body = await enqueue(prevInputDate);
     const getPredict = await getImageCaption(enq_body);
     return getPredict;
   } catch (err) {

@@ -8,8 +8,8 @@
     "data": [
       "people standing around a building "
     ],
-    "duration": 3.292393922805786,
-    "average_duration": 10.859335818115657
+    "duration": 4.587456226348877,
+    "average_duration": 10.808066431722898
   }
 }
 ```
@@ -17,12 +17,14 @@
 
 ```json
 {
-  "left-region": 6,
-  "center-region": 6,
-  "right-region": 6,
-  "overlap-region": 320,
-  "diffusion-steps": 50,
-  "random-seed": 5803936
+  "2023-02-24": {
+    "left-region": 6, 
+    "center-region": 6, 
+    "right-region": 6, 
+    "overlap-region": 320, 
+    "diffusion-steps": 50, 
+    "random-seed": 5803936
+  }
 }
 ```
 </td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 2</td></table>
@@ -43,12 +45,14 @@
 
 ```json
 {
-  "left-region": 6,
-  "center-region": 6,
-  "right-region": 6,
-  "overlap-region": 320,
+  "2023-02-23": {
+  "left-region": 1,
+  "center-region": 1,
+  "right-region": 1,
+  "overlap-region": 256,
   "diffusion-steps": 50,
-  "random-seed": 5803936
+  "random-seed": 3822730
+  }
 }
 ```
 </td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 1</td></table>

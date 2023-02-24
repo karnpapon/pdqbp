@@ -75,7 +75,7 @@ function getReadmeContent(_data, _data2, it, date) {
   return `<table><tr><td colspan="2"><img src="./images/${date}_output.png"></td></tr></tr><tr colspan="2"><tr></tr><td>\n\n\`\`\`json\n${data}\n\`\`\`\n</td><td>\n\n\`\`\`json\n${data2}\n\`\`\`\n</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : ${iterations}</td></table>\n`;
 }
 
-function buildReadmeContent(caption, iterations, logsData, params) {
+function buildReadmeContent(caption, iterations, logsData, logsData2, params) {
   const title = "### [`pdqbp`](/about.md)\n\n";
   let bodies = "";
   const entry = buildReadmeInitialBody();
@@ -85,7 +85,7 @@ function buildReadmeContent(caption, iterations, logsData, params) {
       const d = i === iterations ? caption.data : logsData[i].text;
       bodies += getReadmeContent(
         i === iterations ? caption.data : JSON.parse("{" + d + "}"),
-        params,
+        i === iterations ? params : JSON.parse("{" + logsData2[i].text + "}"),
         i + 1,
         i === iterations
           ? getDateFormat()
@@ -108,13 +108,12 @@ function buildReadmeInitialBody() {
   return initData;
 }
 
-function buildLogsContent(caption) {
-  return `\`\`\`json\n"${getDateFormat()}":${JSON.stringify(
-    caption.data
-  )}\n\`\`\`\n`;
+function buildLogsContent(data) {
+  console.log("buildLogsContent = ", data);
+  return `\`\`\`json\n"${getDateFormat()}":${JSON.stringify(data)}\n\`\`\`\n`;
 }
 
-function getPrevData(logsData) {
+function getPrevDataDate(logsData) {
   return logsData.length > 0
     ? logsData[logsData.length - 1].text.split(":")[0].replace(/['"]+/g, "")
     : ENTRY_POINT_DATA_DATE;
@@ -131,5 +130,5 @@ module.exports = {
   buildLogsContent,
   buildReadmeContent,
   buildReadmeInitialBody,
-  getPrevData,
+  getPrevDataDate,
 };

@@ -3,12 +3,12 @@ const path = require("path");
 const { marked } = require("marked");
 const { image2text, sessionId } = require("./src/image2text");
 const { text2image } = require("./src/text2image");
-const { getPrevData } = require("./utils");
+const { getPrevDataDate } = require("./utils");
 
-const logfile = path.join(__dirname, "./logs.md");
+const logfile = path.join(__dirname, "./logs-img-to-text.md");
 const l = fs.readFileSync(logfile, { encoding: "utf8" });
 const logsData = marked.lexer(l);
-const prevDataDate = getPrevData(logsData);
+const prevDataDate = getPrevDataDate(logsData);
 
 (async () => {
   try {
