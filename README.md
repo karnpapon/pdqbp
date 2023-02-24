@@ -1,10 +1,10 @@
 ### [`pdqbp`](/about.md)
 
-<table><tr><td colspan="2"><img src="./images/2023-01-23_output.png"></td></tr></tr><tr colspan="2"><tr></tr><td>
+<table><tr><td colspan="2"><img src="./images/2023-02-23_output.png"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
 {
-  "2023-01-23": {
+  "2023-02-23": {
     "data": ["a woman in a black dress standing next to a mirror "],
     "duration": 4.4540956020355225,
     "average_duration": 11.045599886665144

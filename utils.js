@@ -21,7 +21,8 @@ function makeSessionId(length) {
 function getDateFormat(offsetDate = 0) {
   const d = new Date();
   const date = d.getDate() < 10 ? `0${d.getDate()}` : d.getDate();
-  const month = d.getMonth() < 10 ? `0${d.getMonth()}` : d.getMonth();
+  const month =
+    d.getMonth() + 1 < 10 ? `0${d.getMonth() + 1}` : d.getMonth() + 1; // +1 since getMonth start at zero
   return `${d.getFullYear()}-${month}-${date + offsetDate}`; // ISO 8601 standard.
 }
 
