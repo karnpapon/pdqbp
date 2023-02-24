@@ -26,6 +26,28 @@ const params = {
   "random-seed": rand(9999999),
 };
 
+function updateFiles(caption) {
+  fs.appendFileSync(logImageToTextfile, buildLogsContent(caption.data));
+  fs.appendFileSync(logTextToImagefile, buildLogsContent(params));
+  const imgToTextData = fs.readFileSync(logImageToTextfile, {
+    encoding: "utf8",
+  });
+  const textToImgData = fs.readFileSync(logTextToImagefile, {
+    encoding: "utf8",
+  });
+  const logsData = marked.lexer(imgToTextData);
+  const logsData2 = marked.lexer(textToImgData);
+  const iterations = logsData.length;
+  const readmeContent = buildReadmeContent(
+    caption,
+    iterations,
+    logsData,
+    logsData2,
+    params
+  );
+  fs.writeFileSync(readmeFile, readmeContent);
+}
+
 function text2image(caption, sessionId) {
   const ws = new WebSocket(WS_ENDPOINT);
 
@@ -79,25 +101,7 @@ function text2image(caption, sessionId) {
       );
 
       // update `README.md` & `logs-*.md` only if process is completed.
-      fs.appendFileSync(logImageToTextfile, buildLogsContent(caption.data));
-      fs.appendFileSync(logTextToImagefile, buildLogsContent(params));
-      const imgToTextData = fs.readFileSync(logImageToTextfile, {
-        encoding: "utf8",
-      });
-      const textToImgData = fs.readFileSync(logTextToImagefile, {
-        encoding: "utf8",
-      });
-      const logsData = marked.lexer(imgToTextData);
-      const logsData2 = marked.lexer(textToImgData);
-      const iterations = logsData.length;
-      const readmeContent = buildReadmeContent(
-        caption,
-        iterations,
-        logsData,
-        logsData2,
-        params
-      );
-      fs.writeFileSync(readmeFile, readmeContent);
+      updateFiles(caption);
     }
   });
 }

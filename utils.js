@@ -101,7 +101,7 @@ function buildReadmeInitialBody() {
   let initData = getReadmeContent(
     INITIAL_INPUT_1,
     INITIAL_INPUT_2,
-    "entry",
+    0,
     ENTRY_POINT_DATA_DATE
   );
 

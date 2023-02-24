@@ -60,9 +60,9 @@
 
 ```json
 {
-  "data": [
-    "entry point data"
-  ]
+  "2023-02-22": {
+    "data": "initial"
+  }
 }
 ```
 </td><td>
@@ -77,4 +77,4 @@
   "random-seed": 3927643
 }
 ```
-</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : entry</td></table>
+</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 0</td></table>

@@ -5,7 +5,9 @@ const WS_ENDPOINT = "wss://albarji-mixture-of-diffusers.hf.space/queue/join";
 const ENTRY_POINT_DATA_DATE = "2023-02-22";
 
 const INITIAL_INPUT_1 = {
-  data: ["entry point data"],
+  [ENTRY_POINT_DATA_DATE]: { 
+    data:  "initial" 
+  },
 };
 
 const INITIAL_INPUT_2 = {
