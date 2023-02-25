@@ -8,6 +8,7 @@ const {
   getDateFormat,
   buildReadmeContent,
   buildLogsContent,
+  resizeBase64,
 } = require("../utils");
 const { WS_ENDPOINT } = require("./const");
 
@@ -95,10 +96,14 @@ function text2image(caption, sessionId) {
 
     if (msg.msg === "process_completed") {
       console.log("complete message=", msg.success);
-      saveImage(
-        msg.output.data[0],
-        path.join(outputImagePath, getDateFormat() + "_" + "output.png")
-      );
+      resizeBase64({ base64Image: msg.output.data[0] })
+        .then((res) => {
+          saveImage(
+            res,
+            path.join(outputImagePath, getDateFormat() + "_" + "output.jpeg")
+          );
+        })
+        .catch((err) => console.error(err));
 
       // update `README.md` & `logs-*.md` only if process is completed.
       updateFiles(caption);

@@ -1,6 +1,6 @@
 ### [`pdqbp`](/about.md)
 
-<table><tr><td colspan="2"><img src="./images/2023-02-25_output.png"></td></tr></tr><tr colspan="2"><tr></tr><td>
+<table><tr><td colspan="2"><img src="./images/2023-02-25_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
 {
@@ -8,8 +8,8 @@
     "data": [
       "people walking down a street "
     ],
-    "duration": 3.242974042892456,
-    "average_duration": 10.607333661121633
+    "duration": 7.428493499755859,
+    "average_duration": 10.58210526561523
   }
 }
 ```
@@ -18,17 +18,17 @@
 ```json
 {
   "2023-02-25": {
-    "left-region": 2,
-    "center-region": 2,
-    "right-region": 2,
+    "left-region": 0,
+    "center-region": 0,
+    "right-region": 0,
     "overlap-region": 320,
-    "diffusion-steps": 40,
-    "random-seed": 4430701
+    "diffusion-steps": 37,
+    "random-seed": 3764366
   }
 }
 ```
 </td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 3</td></table>
-<table><tr><td colspan="2"><img src="./images/2023-02-24_output.png"></td></tr></tr><tr colspan="2"><tr></tr><td>
+<table><tr><td colspan="2"><img src="./images/2023-02-24_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
 {
@@ -56,7 +56,7 @@
 }
 ```
 </td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 2</td></table>
-<table><tr><td colspan="2"><img src="./images/2023-02-23_output.png"></td></tr></tr><tr colspan="2"><tr></tr><td>
+<table><tr><td colspan="2"><img src="./images/2023-02-23_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
 {
@@ -84,7 +84,7 @@
 }
 ```
 </td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 1</td></table>
-<table><tr><td colspan="2"><img src="./images/2023-02-22_output.png"></td></tr></tr><tr colspan="2"><tr></tr><td>
+<table><tr><td colspan="2"><img src="./images/2023-02-22_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
 {

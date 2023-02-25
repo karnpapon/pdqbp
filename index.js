@@ -13,7 +13,7 @@ const prevDataDate = getPrevDataDate(logsData);
 (async () => {
   try {
     const caption = await image2text(prevDataDate);
-    await text2image(caption, sessionId);
+    text2image(caption, sessionId);
     console.log("data", caption.data);
   } catch (err) {
     console.error(err);

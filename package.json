@@ -11,6 +11,7 @@
   "dependencies": {
     "marked": "^4.2.12",
     "random-seed": "^0.3.0",
+    "sharp": "^0.31.3",
     "ws": "^8.12.1"
   },
   "engines": {

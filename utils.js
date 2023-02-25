@@ -1,4 +1,5 @@
 const fs = require("fs");
+const sharp = require("sharp");
 const {
   ENTRY_POINT_DATA_DATE,
   INITIAL_INPUT_1,
@@ -51,6 +52,24 @@ function base64toBlob(base64Data, contentType) {
   return new Blob(byteArrays, { type: contentType });
 }
 
+async function resizeBase64({ base64Image, maxWidth = 1280, quality = 90 }) {
+  const destructImage = base64Image.split(";");
+  const mimType = destructImage[0].split(":")[1];
+  const imageData = destructImage[1].split(",")[1];
+
+  try {
+    let resizedImage = Buffer.from(imageData, "base64");
+    resizedImage = await sharp(resizedImage)
+      .resize(maxWidth)
+      .jpeg({ quality })
+      .toBuffer();
+
+    return `data:${mimType};base64,${resizedImage.toString("base64")}`;
+  } catch (error) {
+    console.error(error);
+  }
+}
+
 function saveImage(data, path) {
   let base64Data = data.replace(/^data:image\/png;base64,/, "");
   base64Data += base64Data.replace("+", " ");
@@ -72,7 +91,7 @@ function getReadmeContent(_data, _data2, it, date) {
   const data = JSON.stringify(_data || {}, null, 2);
   const data2 = JSON.stringify(_data2 || {}, null, 2);
   const iterations = it;
-  return `<table><tr><td colspan="2"><img src="./images/${date}_output.png"></td></tr></tr><tr colspan="2"><tr></tr><td>\n\n\`\`\`json\n${data}\n\`\`\`\n</td><td>\n\n\`\`\`json\n${data2}\n\`\`\`\n</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : ${iterations}</td></table>\n`;
+  return `<table><tr><td colspan="2"><img src="./images/${date}_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>\n\n\`\`\`json\n${data}\n\`\`\`\n</td><td>\n\n\`\`\`json\n${data2}\n\`\`\`\n</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : ${iterations}</td></table>\n`;
 }
 
 function buildReadmeContent(caption, iterations, logsData, logsData2, params) {
@@ -109,7 +128,6 @@ function buildReadmeInitialBody() {
 }
 
 function buildLogsContent(data) {
-  console.log("buildLogsContent = ", data);
   return `\`\`\`json\n"${getDateFormat()}":${JSON.stringify(data)}\n\`\`\`\n`;
 }
 
@@ -131,4 +149,5 @@ module.exports = {
   buildReadmeContent,
   buildReadmeInitialBody,
   getPrevDataDate,
+  resizeBase64,
 };

@@ -15,7 +15,7 @@ const customHeaders = {
 
 async function enqueue(prevData) {
   const imgBasePath = "../images";
-  const prevFileName = imgBasePath + "/" + prevData + "_output.png";
+  const prevFileName = imgBasePath + "/" + prevData + "_output.jpeg";
   const prevImg = path.join(__dirname, prevFileName);
   const prevImageAsBase64 = fs.readFileSync(prevImg, { encoding: "base64" });
 
@@ -23,7 +23,7 @@ async function enqueue(prevData) {
     action: "predict",
     fn_index: 0,
     session_hash: "",
-    data: ["data:image/png;base64," + prevImageAsBase64],
+    data: ["data:image/jpeg;base64," + prevImageAsBase64],
   };
 
   payload_enqueue.session_hash = sessionId;
