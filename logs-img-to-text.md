@@ -4,3 +4,6 @@
 ```json
 "2023-02-24":{"data":["people standing around a building "],"duration":3.292393922805786,"average_duration":10.859335818115657}
 ```
+```json
+"2023-02-25":{"data":["people walking down a street "],"duration":3.242974042892456,"average_duration":10.607333661121633}
+```
