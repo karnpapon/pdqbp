@@ -1,5 +1,33 @@
 ### [`pdqbp`](/about.md)
 
+<table><tr><td colspan="2"><img src="./images/2023-02-26_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+
+```json
+{
+  "2023-02-26": {
+    "data": [
+      "a crowd of people walking down a street "
+    ],
+    "duration": 3.7105295658111572,
+    "average_duration": 11.224461117965536
+  }
+}
+```
+</td><td>
+
+```json
+{
+  "2023-02-26": {
+    "left-region": 0,
+    "center-region": 0,
+    "right-region": 0,
+    "overlap-region": 320,
+    "diffusion-steps": 38,
+    "random-seed": 8987156
+  }
+}
+```
+</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 4</td></table>
 <table><tr><td colspan="2"><img src="./images/2023-02-25_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
@@ -8,8 +36,8 @@
     "data": [
       "people walking down a street "
     ],
-    "duration": 7.428493499755859,
-    "average_duration": 10.58210526561523
+    "duration": 3.242974042892456,
+    "average_duration": 10.607333661121633
   }
 }
 ```
@@ -18,12 +46,12 @@
 ```json
 {
   "2023-02-25": {
-    "left-region": 0,
-    "center-region": 0,
-    "right-region": 0,
+    "left-region": 2,
+    "center-region": 2,
+    "right-region": 2,
     "overlap-region": 320,
-    "diffusion-steps": 37,
-    "random-seed": 3764366
+    "diffusion-steps": 40,
+    "random-seed": 4430701
   }
 }
 ```

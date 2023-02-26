@@ -7,3 +7,6 @@
 ```json
 "2023-02-25":{"data":["people walking down a street "],"duration":3.242974042892456,"average_duration":10.607333661121633}
 ```
+```json
+"2023-02-26":{"data":["a crowd of people walking down a street "],"duration":3.7105295658111572,"average_duration":11.224461117965536}
+```
