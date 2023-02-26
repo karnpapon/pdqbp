@@ -14,7 +14,7 @@ const customHeaders = {
 };
 
 async function enqueue(prevData) {
-  const imgBasePath = "../images";
+  const imgBasePath = "../output";
   const prevFileName = imgBasePath + "/" + prevData + "_output.jpeg";
   const prevImg = path.join(__dirname, prevFileName);
   const prevImageAsBase64 = fs.readFileSync(prevImg, { encoding: "base64" });

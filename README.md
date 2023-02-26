@@ -1,6 +1,6 @@
 ### [`pdqbp`](/about.md)
 
-<table><tr><td colspan="2"><img src="./images/2023-02-26_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+<table><tr><td colspan="2"><img src="./output/2023-02-26_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
 {
@@ -28,7 +28,7 @@
 }
 ```
 </td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 4</td></table>
-<table><tr><td colspan="2"><img src="./images/2023-02-25_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+<table><tr><td colspan="2"><img src="./output/2023-02-25_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
 {
@@ -56,7 +56,7 @@
 }
 ```
 </td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 3</td></table>
-<table><tr><td colspan="2"><img src="./images/2023-02-24_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+<table><tr><td colspan="2"><img src="./output/2023-02-24_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
 {
@@ -84,7 +84,7 @@
 }
 ```
 </td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 2</td></table>
-<table><tr><td colspan="2"><img src="./images/2023-02-23_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+<table><tr><td colspan="2"><img src="./output/2023-02-23_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
 {
@@ -112,7 +112,7 @@
 }
 ```
 </td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 1</td></table>
-<table><tr><td colspan="2"><img src="./images/2023-02-22_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+<table><tr><td colspan="2"><img src="./output/2023-02-22_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
 {

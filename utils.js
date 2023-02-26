@@ -91,7 +91,7 @@ function getReadmeContent(_data, _data2, it, date) {
   const data = JSON.stringify(_data || {}, null, 2);
   const data2 = JSON.stringify(_data2 || {}, null, 2);
   const iterations = it;
-  return `<table><tr><td colspan="2"><img src="./images/${date}_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>\n\n\`\`\`json\n${data}\n\`\`\`\n</td><td>\n\n\`\`\`json\n${data2}\n\`\`\`\n</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : ${iterations}</td></table>\n`;
+  return `<table><tr><td colspan="2"><img src="./output/${date}_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>\n\n\`\`\`json\n${data}\n\`\`\`\n</td><td>\n\n\`\`\`json\n${data2}\n\`\`\`\n</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : ${iterations}</td></table>\n`;
 }
 
 function buildReadmeContent(caption, iterations, logsData, logsData2, params) {

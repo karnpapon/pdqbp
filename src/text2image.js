@@ -12,7 +12,7 @@ const {
 } = require("../utils");
 const { WS_ENDPOINT } = require("./const");
 
-const outputImagePath = path.join(__dirname, "../images");
+const outputImagePath = path.join(__dirname, "../output");
 const readmeFile = path.join(__dirname, "../README.md");
 const logImageToTextfile = path.join(__dirname, "../logs-img-to-text.md");
 const logTextToImagefile = path.join(__dirname, "../logs-text-to-img.md");
