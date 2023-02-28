@@ -13,3 +13,6 @@
 ```json
 "2023-02-27":{"left-region":2,"center-region":2,"right-region":2,"overlap-region":320,"diffusion-steps":38,"random-seed":940339}
 ```
+```json
+"2023-02-28":{"left-region":7,"center-region":7,"right-region":7,"overlap-region":320,"diffusion-steps":42,"random-seed":2329349}
+```

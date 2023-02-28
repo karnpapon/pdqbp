@@ -13,3 +13,6 @@
 ```json
 "2023-02-27":{"data":["a crowd of people sitting on the ground near a river "],"duration":13.139589071273804,"average_duration":11.906607987144234}
 ```
+```json
+"2023-02-28":{"data":["a crowd of people are gathered around a large group of people "],"duration":5.205126523971558,"average_duration":12.145719447193523}
+```
