@@ -17,13 +17,21 @@ const readmeFile = path.join(__dirname, "../README.md");
 const logImageToTextfile = path.join(__dirname, "../logs-img-to-text.md");
 const logTextToImagefile = path.join(__dirname, "../logs-text-to-img.md");
 
+function getRandomIntBetweenWithSteps(start, end, steppedBy) {
+  const offset = 1; // offset to include end value.
+  let totalSteps = (end - start) / steppedBy;
+  let randStep = Math.floor(Math.random() * totalSteps + offset);
+  let rand = randStep * steppedBy + start;
+  return rand;
+}
+
 const guidance_scale = rand(8);
 const params = {
   "left-region": guidance_scale,
   "center-region": guidance_scale,
   "right-region": guidance_scale,
-  "overlap-region": 320, // not sure why number other than 320 is not works ?
-  "diffusion-steps": rand.intBetween(35, 50),
+  "overlap-region": getRandomIntBetweenWithSteps(128, 320, 8), // value SHOULD be between 128 and 320 and stepped by 8, otherwise it'll return `{ msg: 'process_completed', output: { error: null }, success: false }`
+  "diffusion-steps": rand.intBetween(1, 50),
   "random-seed": rand(9999999),
 };
 

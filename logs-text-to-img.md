@@ -17,14 +17,11 @@
 "2023-02-28":{"left-region":7,"center-region":7,"right-region":7,"overlap-region":320,"diffusion-steps":42,"random-seed":2329349}
 ```
 ```json
-"2023-03-010":{"left-region":2,"center-region":2,"right-region":2,"overlap-region":320,"diffusion-steps":36,"random-seed":8598174}
+"2023-03-01":{"left-region":2,"center-region":2,"right-region":2,"overlap-region":320,"diffusion-steps":36,"random-seed":8598174}
 ```
 ```json
-"2023-03-020":{"left-region":2,"center-region":2,"right-region":2,"overlap-region":320,"diffusion-steps":48,"random-seed":9996035}
+"2023-03-02":{"left-region":2,"center-region":2,"right-region":2,"overlap-region":320,"diffusion-steps":48,"random-seed":9996035}
 ```
 ```json
-"2023-03-030":{"left-region":6,"center-region":6,"right-region":6,"overlap-region":320,"diffusion-steps":36,"random-seed":7367964}
-```
-```json
-"2023-03-040":{"left-region":4,"center-region":4,"right-region":4,"overlap-region":320,"diffusion-steps":45,"random-seed":3524793}
+"2023-03-03":{"left-region":6,"center-region":6,"right-region":6,"overlap-region":320,"diffusion-steps":36,"random-seed":7367964}
 ```

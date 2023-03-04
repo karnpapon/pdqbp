@@ -1,15 +1,15 @@
 ### [`pdqbp`](/about.md)
 
-<table><tr><td colspan="2"><img src="./output/2023-03-040_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+<table><tr><td colspan="2"><img src="./output/2023-03-04_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
 {
-  "2023-03-040": {
+  "2023-03-04": {
     "data": [
       "a crowd of people standing around a large group of people "
     ],
-    "duration": 5.145926475524902,
-    "average_duration": 4.818907668193181
+    "duration": 4.39722466468811,
+    "average_duration": 4.869668671254361
   }
 }
 ```
@@ -17,22 +17,22 @@
 
 ```json
 {
-  "2023-03-040": {
+  "2023-03-04": {
     "left-region": 4,
     "center-region": 4,
     "right-region": 4,
     "overlap-region": 320,
-    "diffusion-steps": 45,
-    "random-seed": 3524793
+    "diffusion-steps": 5,
+    "random-seed": 9623079
   }
 }
 ```
 </td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 10</td></table>
-<table><tr><td colspan="2"><img src="./output/2023-03-030_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+<table><tr><td colspan="2"><img src="./output/2023-03-03_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
 {
-  "2023-03-030": {
+  "2023-03-03": {
     "data": [
       "a crowd of people standing around a crowd of people "
     ],
@@ -45,7 +45,7 @@
 
 ```json
 {
-  "2023-03-030": {
+  "2023-03-03": {
     "left-region": 6,
     "center-region": 6,
     "right-region": 6,
@@ -56,11 +56,11 @@
 }
 ```
 </td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 9</td></table>
-<table><tr><td colspan="2"><img src="./output/2023-03-020_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+<table><tr><td colspan="2"><img src="./output/2023-03-02_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
 {
-  "2023-03-020": {
+  "2023-03-02": {
     "data": [
       "a crowd of people standing around a large crowd "
     ],
@@ -73,7 +73,7 @@
 
 ```json
 {
-  "2023-03-020": {
+  "2023-03-02": {
     "left-region": 2,
     "center-region": 2,
     "right-region": 2,
@@ -84,11 +84,11 @@
 }
 ```
 </td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 8</td></table>
-<table><tr><td colspan="2"><img src="./output/2023-03-010_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+<table><tr><td colspan="2"><img src="./output/2023-03-01_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
 {
-  "2023-03-010": {
+  "2023-03-01": {
     "data": [
       "a large crowd of people standing around a crowd of people "
     ],
@@ -101,7 +101,7 @@
 
 ```json
 {
-  "2023-03-010": {
+  "2023-03-01": {
     "left-region": 2,
     "center-region": 2,
     "right-region": 2,
