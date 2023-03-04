@@ -8,8 +8,8 @@
     "data": [
       "a crowd of people standing around a large group of people "
     ],
-    "duration": 4.39722466468811,
-    "average_duration": 4.869668671254361
+    "duration": 4.90889310836792,
+    "average_duration": 4.959488319314045
   }
 }
 ```
@@ -18,12 +18,12 @@
 ```json
 {
   "2023-03-04": {
-    "left-region": 4,
-    "center-region": 4,
-    "right-region": 4,
-    "overlap-region": 320,
-    "diffusion-steps": 5,
-    "random-seed": 9623079
+    "left-region": 5,
+    "center-region": 5,
+    "right-region": 5,
+    "overlap-region": 200,
+    "diffusion-steps": 32,
+    "random-seed": 2074574
   }
 }
 ```
