@@ -34,3 +34,6 @@
 ```json
 "2023-03-06":{"data":["a crowd of people standing around a large group of people "],"duration":5.207799673080444,"average_duration":5.520513468600334}
 ```
+```json
+"2023-03-07":{"data":["a crowd of people standing around a crowd of people "],"duration":10.221726655960083,"average_duration":16.2154255130984}
+```
