@@ -1,5 +1,33 @@
 ### [`pdqbp`](/about.md)
 
+<table><tr><td colspan="2"><img src="./output/2023-03-08_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+
+```json
+{
+  "2023-03-08": {
+    "data": [
+      "a pile of debris sitting on top of a pile of trees "
+    ],
+    "duration": 4.874717473983765,
+    "average_duration": 13.878840092884047
+  }
+}
+```
+</td><td>
+
+```json
+{
+  "2023-03-08": {
+    "left-region": 2,
+    "center-region": 2,
+    "right-region": 2,
+    "overlap-region": 224,
+    "diffusion-steps": 17,
+    "random-seed": 2009852
+  }
+}
+```
+</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 14</td></table>
 <table><tr><td colspan="2"><img src="./output/2023-03-07_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json

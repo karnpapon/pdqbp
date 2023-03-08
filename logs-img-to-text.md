@@ -37,3 +37,6 @@
 ```json
 "2023-03-07":{"data":["a crowd of people standing around a crowd of people "],"duration":10.221726655960083,"average_duration":16.2154255130984}
 ```
+```json
+"2023-03-08":{"data":["a pile of debris sitting on top of a pile of trees "],"duration":4.874717473983765,"average_duration":13.878840092884047}
+```
