@@ -43,3 +43,6 @@
 ```json
 "2023-03-09":{"data":["a pile of trash sitting on top of a pile of trees "],"duration":5.59853458404541,"average_duration":12.465352371844956}
 ```
+```json
+"2023-03-10":{"data":["a man is painting a wall in front of a house "],"duration":5.437368869781494,"average_duration":11.478159784392453}
+```
