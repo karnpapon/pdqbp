@@ -49,3 +49,6 @@
 ```json
 "2023-03-11":{"data":["a man is fixing a wall with a hose "],"duration":4.514027118682861,"average_duration":4.813878398768756}
 ```
+```json
+"2023-03-12":{"data":["a man is fixing a pipe on a wall "],"duration":5.678689241409302,"average_duration":6.616457512680913}
+```
