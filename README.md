@@ -1,5 +1,33 @@
 ### [`pdqbp`](/about.md)
 
+<table><tr><td colspan="2"><img src="./output/2023-03-13_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+
+```json
+{
+  "2023-03-13": {
+    "data": [
+      "two men are fixing a pipe in a building "
+    ],
+    "duration": 5.191164016723633,
+    "average_duration": 7.427327733274568
+  }
+}
+```
+</td><td>
+
+```json
+{
+  "2023-03-13": {
+    "left-region": 2,
+    "center-region": 2,
+    "right-region": 2,
+    "overlap-region": 232,
+    "diffusion-steps": 4,
+    "random-seed": 3243668
+  }
+}
+```
+</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 19</td></table>
 <table><tr><td colspan="2"><img src="./output/2023-03-12_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
