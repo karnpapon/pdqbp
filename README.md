@@ -1,5 +1,33 @@
 ### [`pdqbp`](/about.md)
 
+<table><tr><td colspan="2"><img src="./output/2023-03-14_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+
+```json
+{
+  "2023-03-14": {
+    "data": [
+      "a man walking through a forest with a bunch of snow "
+    ],
+    "duration": 3.526684284210205,
+    "average_duration": 6.82038748099659
+  }
+}
+```
+</td><td>
+
+```json
+{
+  "2023-03-14": {
+    "left-region": 0,
+    "center-region": 0,
+    "right-region": 0,
+    "overlap-region": 224,
+    "diffusion-steps": 8,
+    "random-seed": 9508181
+  }
+}
+```
+</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 20</td></table>
 <table><tr><td colspan="2"><img src="./output/2023-03-13_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
