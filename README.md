@@ -1,5 +1,33 @@
 ### [`pdqbp`](/about.md)
 
+<table><tr><td colspan="2"><img src="./output/2023-03-15_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+
+```json
+{
+  "2023-03-15": {
+    "data": [
+      "a painting of a man riding a skateboard "
+    ],
+    "duration": 10.962588787078857,
+    "average_duration": 7.205140010411933
+  }
+}
+```
+</td><td>
+
+```json
+{
+  "2023-03-15": {
+    "left-region": 2,
+    "center-region": 2,
+    "right-region": 2,
+    "overlap-region": 152,
+    "diffusion-steps": 48,
+    "random-seed": 8711528
+  }
+}
+```
+</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 21</td></table>
 <table><tr><td colspan="2"><img src="./output/2023-03-14_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
