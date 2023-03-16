@@ -32,7 +32,7 @@ const params = {
   "right-region": guidance_scale,
   "overlap-region": getRandomIntBetweenWithSteps(128, 320, 8), // value SHOULD be between 128 and 320 and stepped by 8, otherwise it'll return `{ msg: 'process_completed', output: { error: null }, success: false }`
   "diffusion-steps": rand.intBetween(1, 50),
-  "random-seed": rand(9999999),
+  "random-seed": rand(Number.MAX_SAFE_INTEGER),
 };
 
 function updateFiles(caption) {
