@@ -1,5 +1,33 @@
 ### [`pdqbp`](/about.md)
 
+<table><tr><td colspan="2"><img src="./output/2023-03-17_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+
+```json
+{
+  "2023-03-17": {
+    "data": [
+      "a abandoned abandoned house with a broken tree "
+    ],
+    "duration": 2.5602333545684814,
+    "average_duration": 18.514892001305856
+  }
+}
+```
+</td><td>
+
+```json
+{
+  "2023-03-17": {
+    "left-region": 7,
+    "center-region": 7,
+    "right-region": 7,
+    "overlap-region": 184,
+    "diffusion-steps": 33,
+    "random-seed": 1224266878921517
+  }
+}
+```
+</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 23</td></table>
 <table><tr><td colspan="2"><img src="./output/2023-03-16_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
