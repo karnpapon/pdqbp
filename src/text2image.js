@@ -25,11 +25,14 @@ function getRandomIntBetweenWithSteps(start, end, steppedBy) {
   return rand;
 }
 
-const guidance_scale = rand(8);
+// based-on https://huggingface.co/spaces/albarji/mixture-of-diffusers/blob/main/app.py
+const guidance_scale_l = rand(15);
+const guidance_scale_c = rand(15);
+const guidance_scale_r = rand(15);
 const params = {
-  "left-region": guidance_scale,
-  "center-region": guidance_scale,
-  "right-region": guidance_scale,
+  "left-region": guidance_scale_l,
+  "center-region": guidance_scale_c,
+  "right-region": guidance_scale_r,
   "overlap-region": getRandomIntBetweenWithSteps(128, 320, 8), // value SHOULD be between 128 and 320 and stepped by 8, otherwise it'll return `{ msg: 'process_completed', output: { error: null }, success: false }`
   "diffusion-steps": rand.intBetween(1, 50),
   "random-seed": rand(Number.MAX_SAFE_INTEGER),
