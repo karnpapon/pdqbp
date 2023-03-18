@@ -67,3 +67,6 @@
 ```json
 "2023-03-17":{"data":["a abandoned abandoned house with a broken tree "],"duration":2.5602333545684814,"average_duration":18.514892001305856}
 ```
+```json
+"2023-03-18":{"data":["a house with a large window and a small building "],"duration":8.910776376724243,"average_duration":6.854453844961777}
+```
