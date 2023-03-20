@@ -73,3 +73,6 @@
 ```json
 "2023-03-19":{"data":["a small building with a white door and a blue building "],"duration":2.200101375579834,"average_duration":6.895642589913668}
 ```
+```json
+"2023-03-20":{"data":["a blue door leading to a blue door with a blue door "],"duration":2.1595778465270996,"average_duration":1.7858084349231866}
+```
