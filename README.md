@@ -1,5 +1,33 @@
 ### [`pdqbp`](/about.md)
 
+<table><tr><td colspan="2"><img src="./output/2023-03-21_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+
+```json
+{
+  "2023-03-21": {
+    "data": [
+      "a blue door leading to a blue room with a blue wall "
+    ],
+    "duration": 2.263767957687378,
+    "average_duration": 2.19107794591088
+  }
+}
+```
+</td><td>
+
+```json
+{
+  "2023-03-21": {
+    "left-region": 14,
+    "center-region": 4,
+    "right-region": 7,
+    "overlap-region": 208,
+    "diffusion-steps": 1,
+    "random-seed": 1536552627542229
+  }
+}
+```
+</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 27</td></table>
 <table><tr><td colspan="2"><img src="./output/2023-03-20_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
