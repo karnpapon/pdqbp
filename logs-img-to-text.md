@@ -82,3 +82,6 @@
 ```json
 "2023-03-22":{"data":["a blurry picture of a white and black bird "],"duration":1.9292473793029785,"average_duration":2.1241919960791673}
 ```
+```json
+"2023-03-23":{"data":["a bird perched on a branch with a tree "],"duration":2.0726325511932373,"average_duration":3.4652992784092618}
+```
