@@ -1,5 +1,33 @@
 ### [`pdqbp`](/about.md)
 
+<table><tr><td colspan="2"><img src="./output/2023-03-25_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+
+```json
+{
+  "2023-03-25": {
+    "data": [
+      "birds perched on a tree branch "
+    ],
+    "duration": 1.3612475395202637,
+    "average_duration": 2.9467003023234715
+  }
+}
+```
+</td><td>
+
+```json
+{
+  "2023-03-25": {
+    "left-region": 12,
+    "center-region": 10,
+    "right-region": 13,
+    "overlap-region": 192,
+    "diffusion-steps": 9,
+    "random-seed": 3745584436573514
+  }
+}
+```
+</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 31</td></table>
 <table><tr><td colspan="2"><img src="./output/2023-03-24_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
