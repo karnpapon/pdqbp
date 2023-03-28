@@ -1,5 +1,33 @@
 ### [`pdqbp`](/about.md)
 
+<table><tr><td colspan="2"><img src="./output/2023-03-28_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+
+```json
+{
+  "2023-03-28": {
+    "data": [
+      "a painting of birds on a tree "
+    ],
+    "duration": 1.6712684631347656,
+    "average_duration": 2.8828126759914303
+  }
+}
+```
+</td><td>
+
+```json
+{
+  "2023-03-28": {
+    "left-region": 13,
+    "center-region": 8,
+    "right-region": 10,
+    "overlap-region": 136,
+    "diffusion-steps": 8,
+    "random-seed": 4408333879471387
+  }
+}
+```
+</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 34</td></table>
 <table><tr><td colspan="2"><img src="./output/2023-03-27_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
