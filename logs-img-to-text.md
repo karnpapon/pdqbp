@@ -106,3 +106,6 @@
 ```json
 "2023-03-30":{"data":["a painting of a tree with a painting of a person "],"duration":1.9438633918762207,"average_duration":3.2248703101509935}
 ```
+```json
+"2023-03-31":{"data":["a woman and a child are standing in a tree "],"duration":1.991511583328247,"average_duration":3.4276203294694834}
+```
