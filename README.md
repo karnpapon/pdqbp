@@ -1,5 +1,33 @@
 ### [`pdqbp`](/about.md)
 
+<table><tr><td colspan="2"><img src="./output/2023-04-01_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+
+```json
+{
+  "2023-04-01": {
+    "data": [
+      "a woman and a child standing next to a tree "
+    ],
+    "duration": 1.7554197311401367,
+    "average_duration": 3.5389639009894975
+  }
+}
+```
+</td><td>
+
+```json
+{
+  "2023-04-01": {
+    "left-region": 10,
+    "center-region": 11,
+    "right-region": 9,
+    "overlap-region": 208,
+    "diffusion-steps": 22,
+    "random-seed": 3125029598797873
+  }
+}
+```
+</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 38</td></table>
 <table><tr><td colspan="2"><img src="./output/2023-03-31_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
