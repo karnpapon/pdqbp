@@ -112,3 +112,6 @@
 ```json
 "2023-04-01":{"data":["a woman and a child standing next to a tree "],"duration":1.7554197311401367,"average_duration":3.5389639009894975}
 ```
+```json
+"2023-04-02":{"data":["a woman and a man standing next to each other "],"duration":1.7745952606201172,"average_duration":3.5590133313096635}
+```
