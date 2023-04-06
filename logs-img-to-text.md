@@ -124,3 +124,6 @@
 ```json
 "2023-04-05":{"data":["a collage of photos of people in a park "],"duration":1.9667770862579346,"average_duration":3.43898970893033}
 ```
+```json
+"2023-04-06":{"data":["a collage of photos of people and animals "],"duration":2.076085090637207,"average_duration":18.64594996043099}
+```
