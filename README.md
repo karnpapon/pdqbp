@@ -1,5 +1,33 @@
 ### [`pdqbp`](/about.md)
 
+<table><tr><td colspan="2"><img src="./output/2023-04-07_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+
+```json
+{
+  "2023-04-07": {
+    "data": [
+      "a collage of photos of dogs and their owners "
+    ],
+    "duration": 8.792436122894287,
+    "average_duration": 16.598918764856492
+  }
+}
+```
+</td><td>
+
+```json
+{
+  "2023-04-07": {
+    "left-region": 3,
+    "center-region": 3,
+    "right-region": 10,
+    "overlap-region": 240,
+    "diffusion-steps": 29,
+    "random-seed": 7560753605058879
+  }
+}
+```
+</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 44</td></table>
 <table><tr><td colspan="2"><img src="./output/2023-04-06_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
