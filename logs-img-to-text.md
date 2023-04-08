@@ -130,3 +130,6 @@
 ```json
 "2023-04-07":{"data":["a collage of photos of dogs and their owners "],"duration":8.792436122894287,"average_duration":16.598918764856492}
 ```
+```json
+"2023-04-08":{"data":["a collage of photos of dogs and cats "],"duration":5.171021461486816,"average_duration":14.551849078037048}
+```
