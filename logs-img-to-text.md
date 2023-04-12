@@ -142,3 +142,6 @@
 ```json
 "2023-04-11":{"data":["a collage of photos of people and their belongings "],"duration":1.955420970916748,"average_duration":8.773477273914473}
 ```
+```json
+"2023-04-12":{"data":["a collage of photos of people in a room "],"duration":2.753047466278076,"average_duration":8.369761900170063}
+```
