@@ -148,3 +148,6 @@
 ```json
 "2023-04-13":{"data":["a collage of photos of people in a room "],"duration":3.1995584964752197,"average_duration":8.219387176793216}
 ```
+```json
+"2023-04-14":{"data":["a blurry picture of a white and black bird "],"duration":2.0388896465301514,"average_duration":7.916273849002279}
+```
