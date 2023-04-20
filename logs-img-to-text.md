@@ -166,3 +166,6 @@
 ```json
 "2023-04-19":{"data":["a bird is perched on a branch in a tree "],"duration":1.757389783859253,"average_duration":7.120424430229758}
 ```
+```json
+"2023-04-20":{"data":["a bird perched on a branch in a tree "],"duration":1.7206811904907227,"average_duration":7.030604748287703}
+```
