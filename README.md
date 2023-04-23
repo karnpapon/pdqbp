@@ -1,5 +1,33 @@
 ### [`pdqbp`](/about.md)
 
+<table><tr><td colspan="2"><img src="./output/2023-04-23_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+
+```json
+{
+  "2023-04-23": {
+    "data": [
+      "a blurry picture of a white and blue sky "
+    ],
+    "duration": 3.400585651397705,
+    "average_duration": 3.729659672146401
+  }
+}
+```
+</td><td>
+
+```json
+{
+  "2023-04-23": {
+    "left-region": 6,
+    "center-region": 5,
+    "right-region": 7,
+    "overlap-region": 208,
+    "diffusion-steps": 33,
+    "random-seed": 2866335829755639
+  }
+}
+```
+</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 60</td></table>
 <table><tr><td colspan="2"><img src="./output/2023-04-22_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
