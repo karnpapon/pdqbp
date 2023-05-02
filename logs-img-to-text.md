@@ -193,3 +193,6 @@
 ```json
 "2023-05-01":{"data":["three girls posing for a picture in the snow "],"duration":2.7299728393554688,"average_duration":3.596990252872115}
 ```
+```json
+"2023-05-02":{"data":["two girls walking through the snow with snowboards "],"duration":7.583176612854004,"average_duration":5.0821291717531585}
+```
