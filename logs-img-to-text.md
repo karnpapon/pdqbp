@@ -196,3 +196,6 @@
 ```json
 "2023-05-02":{"data":["two girls walking through the snow with snowboards "],"duration":7.583176612854004,"average_duration":5.0821291717531585}
 ```
+```json
+"2023-05-03":{"data":["people riding skis on top of snow covered ground "],"duration":2.5525870323181152,"average_duration":6.456835030633665}
+```
