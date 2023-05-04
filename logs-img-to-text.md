@@ -199,3 +199,6 @@
 ```json
 "2023-05-03":{"data":["people riding skis on top of snow covered ground "],"duration":2.5525870323181152,"average_duration":6.456835030633665}
 ```
+```json
+"2023-05-04":{"data":["skiers are skiing down a snowy hill "],"duration":1.6915311813354492,"average_duration":6.122106638876583}
+```
