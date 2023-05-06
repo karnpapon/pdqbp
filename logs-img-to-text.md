@@ -205,3 +205,6 @@
 ```json
 "2023-05-05":{"data":["skiers are skiing down a snowy hill "],"duration":1.805605173110962,"average_duration":5.632345821147926}
 ```
+```json
+"2023-05-06":{"data":["people skiing down a snow covered slope "],"duration":2.987480878829956,"average_duration":5.46704543776344}
+```
