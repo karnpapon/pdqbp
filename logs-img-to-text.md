@@ -208,3 +208,6 @@
 ```json
 "2023-05-06":{"data":["people skiing down a snow covered slope "],"duration":2.987480878829956,"average_duration":5.46704543776344}
 ```
+```json
+"2023-05-07":{"data":["a snowboarder is flying through the air while others watch "],"duration":12.27283501625061,"average_duration":5.271198008355372}
+```
