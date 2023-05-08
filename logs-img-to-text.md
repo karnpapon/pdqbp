@@ -211,3 +211,6 @@
 ```json
 "2023-05-07":{"data":["a snowboarder is flying through the air while others watch "],"duration":12.27283501625061,"average_duration":5.271198008355372}
 ```
+```json
+"2023-05-08":{"data":["a snowboarder is jumping over a snow covered slope "],"duration":28.246408939361572,"average_duration":6.1629931430505565}
+```
