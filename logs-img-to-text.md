@@ -217,3 +217,6 @@
 ```json
 "2023-05-09":{"data":["a snowboarder is jumping over a snow covered slope "],"duration":2.4081335067749023,"average_duration":6.791255676124191}
 ```
+```json
+"2023-05-10":{"data":["a snowboarder is jumping over a snow covered slope "],"duration":2.1533679962158203,"average_duration":6.246984718272643}
+```
