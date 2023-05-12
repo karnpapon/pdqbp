@@ -1,5 +1,33 @@
 ### [`pdqbp`](/about.md)
 
+<table><tr><td colspan="2"><img src="./output/2023-05-12_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+
+```json
+{
+  "2023-05-12": {
+    "data": [
+      "a snowboarder is jumping over a snow covered slope "
+    ],
+    "duration": 2.0337471961975098,
+    "average_duration": 5.720266331133178
+  }
+}
+```
+</td><td>
+
+```json
+{
+  "2023-05-12": {
+    "left-region": 6,
+    "center-region": 9,
+    "right-region": 3,
+    "overlap-region": 280,
+    "diffusion-steps": 45,
+    "random-seed": 570670241999796
+  }
+}
+```
+</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 76</td></table>
 <table><tr><td colspan="2"><img src="./output/2023-05-11_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
