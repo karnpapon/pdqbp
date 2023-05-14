@@ -229,3 +229,6 @@
 ```json
 "2023-05-13":{"data":["a snowboarder is doing a trick on a snowboard "],"duration":2.9038589000701904,"average_duration":5.373101142718485}
 ```
+```json
+"2023-05-14":{"data":["a snowboarder is doing a trick in the air "],"duration":11.512997388839722,"average_duration":5.130789327483819}
+```
