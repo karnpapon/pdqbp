@@ -238,3 +238,6 @@
 ```json
 "2023-05-16":{"data":["a snowboarder is jumping high in the air "],"duration":120.33880043029785,"average_duration":6.620594666422634}
 ```
+```json
+"2023-05-17":{"data":["a blurry image of a person with a cell phone "],"duration":75.46917223930359,"average_duration":7.377917793159392}
+```
