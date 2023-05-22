@@ -244,3 +244,6 @@
 ```json
 "2023-05-18":{"data":["a man is taking a picture of himself with a cell phone "],"duration":129.1786379814148,"average_duration":8.989147800213093}
 ```
+```json
+"2023-05-22":{"data":["a man holding a cell phone in his hand "],"duration":1.467336893081665,"average_duration":5.228287538185485}
+```
