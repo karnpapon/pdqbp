@@ -1,5 +1,33 @@
 ### [`pdqbp`](/about.md)
 
+<table><tr><td colspan="2"><img src="./output/2023-05-23_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+
+```json
+{
+  "2023-05-23": {
+    "data": [
+      "a man holding a cell phone in his hand "
+    ],
+    "duration": 1.5157079696655273,
+    "average_duration": 4.879182345173138
+  }
+}
+```
+</td><td>
+
+```json
+{
+  "2023-05-23": {
+    "left-region": 13,
+    "center-region": 9,
+    "right-region": 6,
+    "overlap-region": 160,
+    "diffusion-steps": 33,
+    "random-seed": 5279021842606059
+  }
+}
+```
+</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 84</td></table>
 <table><tr><td colspan="2"><img src="./output/2023-05-22_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json

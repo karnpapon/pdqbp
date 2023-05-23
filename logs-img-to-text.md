@@ -247,3 +247,6 @@
 ```json
 "2023-05-22":{"data":["a man holding a cell phone in his hand "],"duration":1.467336893081665,"average_duration":5.228287538185485}
 ```
+```json
+"2023-05-23":{"data":["a man holding a cell phone in his hand "],"duration":1.5157079696655273,"average_duration":4.879182345173138}
+```
