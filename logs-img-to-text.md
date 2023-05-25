@@ -253,3 +253,6 @@
 ```json
 "2023-05-24":{"data":["a man holding a cell phone and a woman looking at it "],"duration":2.902789354324341,"average_duration":4.655570891592887}
 ```
+```json
+"2023-05-25":{"data":["a man and a woman are looking at a laptop "],"duration":3.670480728149414,"average_duration":4.328172978033235}
+```
