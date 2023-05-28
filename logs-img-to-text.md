@@ -262,3 +262,6 @@
 ```json
 "2023-05-27":{"data":["a man and a woman sitting at a table with a laptop "],"duration":3.563232660293579,"average_duration":3.9214193249759055}
 ```
+```json
+"2023-05-28":{"data":["people sitting around a table with laptops "],"duration":0.98923659324646,"average_duration":3.449592541755603}
+```
