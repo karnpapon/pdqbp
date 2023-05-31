@@ -271,3 +271,6 @@
 ```json
 "2023-05-30":{"data":["a room filled with people sitting around a table "],"duration":14.871155500411987,"average_duration":4.590830135054326}
 ```
+```json
+"2023-05-31":{"data":["a large group of people sitting around a table "],"duration":4.096848726272583,"average_duration":4.550598701474923}
+```
