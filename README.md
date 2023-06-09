@@ -1,5 +1,33 @@
 ### [`pdqbp`](/about.md)
 
+<table><tr><td colspan="2"><img src="./output/2023-06-09_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+
+```json
+{
+  "2023-06-09": {
+    "data": [
+      "a large group of people standing in front of a building "
+    ],
+    "duration": 18.4433114528656,
+    "average_duration": 3.83771151631285
+  }
+}
+```
+</td><td>
+
+```json
+{
+  "2023-06-09": {
+    "left-region": 11,
+    "center-region": 12,
+    "right-region": 3,
+    "overlap-region": 192,
+    "diffusion-steps": 44,
+    "random-seed": 5457544625992
+  }
+}
+```
+</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 101</td></table>
 <table><tr><td colspan="2"><img src="./output/2023-06-08_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
