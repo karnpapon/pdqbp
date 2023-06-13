@@ -307,3 +307,6 @@
 ```json
 "2023-06-11":{"data":["a large group of people standing in front of a building "],"duration":1.3889219760894775,"average_duration":1.7834777546429181}
 ```
+```json
+"2023-06-13":{"data":["a crowd of people standing around a building "],"duration":1.1094639301300049,"average_duration":1.9230472471631577}
+```
