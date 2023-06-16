@@ -1,5 +1,33 @@
 ### [`pdqbp`](/about.md)
 
+<table><tr><td colspan="2"><img src="./output/2023-06-16_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+
+```json
+{
+  "2023-06-16": {
+    "data": [
+      "a man standing in front of a wall with colorful lights "
+    ],
+    "duration": 2.0861477851867676,
+    "average_duration": 2.0570750730132943
+  }
+}
+```
+</td><td>
+
+```json
+{
+  "2023-06-16": {
+    "left-region": 2,
+    "center-region": 13,
+    "right-region": 10,
+    "overlap-region": 304,
+    "diffusion-steps": 39,
+    "random-seed": 8170052367540655
+  }
+}
+```
+</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 107</td></table>
 <table><tr><td colspan="2"><img src="./output/2023-06-15_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
