@@ -319,3 +319,6 @@
 ```json
 "2023-06-16":{"left-region":2,"center-region":13,"right-region":10,"overlap-region":304,"diffusion-steps":39,"random-seed":8170052367540655}
 ```
+```json
+"2023-06-17":{"left-region":1,"center-region":0,"right-region":8,"overlap-region":184,"diffusion-steps":15,"random-seed":4885014301094391}
+```

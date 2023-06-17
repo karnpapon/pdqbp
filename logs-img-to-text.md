@@ -319,3 +319,6 @@
 ```json
 "2023-06-16":{"data":["a man standing in front of a wall with colorful lights "],"duration":2.0861477851867676,"average_duration":2.0570750730132943}
 ```
+```json
+"2023-06-17":{"data":["a man standing next to a wall with a group of people "],"duration":3.5452232360839844,"average_duration":2.0561338185256934}
+```
