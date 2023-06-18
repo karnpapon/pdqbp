@@ -322,3 +322,6 @@
 ```json
 "2023-06-17":{"data":["a man standing next to a wall with a group of people "],"duration":3.5452232360839844,"average_duration":2.0561338185256934}
 ```
+```json
+"2023-06-18":{"data":["a wall with a painting of a bear and a dog "],"duration":2.197456121444702,"average_duration":2.0489326310895737}
+```
