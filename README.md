@@ -1,5 +1,33 @@
 ### [`pdqbp`](/about.md)
 
+<table><tr><td colspan="2"><img src="./output/2023-06-19_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+
+```json
+{
+  "2023-06-19": {
+    "data": [
+      "a painting of a horse and a cow "
+    ],
+    "duration": 2.577197313308716,
+    "average_duration": 2.0434177045946336
+  }
+}
+```
+</td><td>
+
+```json
+{
+  "2023-06-19": {
+    "left-region": 8,
+    "center-region": 5,
+    "right-region": 1,
+    "overlap-region": 256,
+    "diffusion-steps": 5,
+    "random-seed": 5564521351841829
+  }
+}
+```
+</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 110</td></table>
 <table><tr><td colspan="2"><img src="./output/2023-06-18_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
