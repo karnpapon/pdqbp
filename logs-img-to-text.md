@@ -328,3 +328,6 @@
 ```json
 "2023-06-19":{"data":["a painting of a horse and a cow "],"duration":2.577197313308716,"average_duration":2.0434177045946336}
 ```
+```json
+"2023-06-20":{"data":["a herd of horses standing next to each other "],"duration":1.8486061096191406,"average_duration":2.038264687315178}
+```
