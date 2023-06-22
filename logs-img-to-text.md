@@ -334,3 +334,6 @@
 ```json
 "2023-06-21":{"data":["a herd of horses standing on top of a lush green field "],"duration":6.496182918548584,"average_duration":2.046840551648634}
 ```
+```json
+"2023-06-22":{"data":["horses standing on top of a lush green field "],"duration":1.3097574710845947,"average_duration":2.0466351089482453}
+```
