@@ -352,3 +352,6 @@
 ```json
 "2023-06-27":{"data":["a herd of horses walking across a lush green field "],"duration":1.439676284790039,"average_duration":2.2520011606602743}
 ```
+```json
+"2023-06-28":{"data":["a large group of horses walking down a grassy hill "],"duration":2.697270631790161,"average_duration":2.2619771551435637}
+```
