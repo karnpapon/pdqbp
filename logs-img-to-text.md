@@ -364,3 +364,6 @@
 ```json
 "2023-07-01":{"data":["a number of horses in a field with trees "],"duration":2.192385673522949,"average_duration":2.202863463176894}
 ```
+```json
+"2023-07-02":{"data":["a large group of people are walking through a field "],"duration":2.001183271408081,"average_duration":2.2011202072835903}
+```
