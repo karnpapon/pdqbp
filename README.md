@@ -1,5 +1,33 @@
 ### [`pdqbp`](/about.md)
 
+<table><tr><td colspan="2"><img src="./output/2023-07-03_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+
+```json
+{
+  "2023-07-03": {
+    "data": [
+      "a crowd of people walking down a grassy hill "
+    ],
+    "duration": 2.981872797012329,
+    "average_duration": 2.188900659635009
+  }
+}
+```
+</td><td>
+
+```json
+{
+  "2023-07-03": {
+    "left-region": 2,
+    "center-region": 1,
+    "right-region": 5,
+    "overlap-region": 208,
+    "diffusion-steps": 31,
+    "random-seed": 4751860994202985
+  }
+}
+```
+</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 124</td></table>
 <table><tr><td colspan="2"><img src="./output/2023-07-02_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
