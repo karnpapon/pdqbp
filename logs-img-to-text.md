@@ -370,3 +370,6 @@
 ```json
 "2023-07-03":{"data":["a crowd of people walking down a grassy hill "],"duration":2.981872797012329,"average_duration":2.188900659635009}
 ```
+```json
+"2023-07-04":{"data":["a crowd of people walking down a hill "],"duration":1.1386971473693848,"average_duration":2.184043076572073}
+```
