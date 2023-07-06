@@ -376,3 +376,6 @@
 ```json
 "2023-07-05":{"data":["a crowd of people walking down a dirt road "],"duration":1.942486047744751,"average_duration":2.1927147845373116}
 ```
+```json
+"2023-07-06":{"data":["people are riding horses down a dirt road "],"duration":1.2439422607421875,"average_duration":2.18975682429534}
+```
