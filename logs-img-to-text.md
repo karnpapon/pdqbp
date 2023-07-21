@@ -421,3 +421,6 @@
 ```json
 "2023-07-20":{"data":["a line of horses running down a dirt road "],"duration":2.060814619064331,"average_duration":2.2675109604296577}
 ```
+```json
+"2023-07-21":{"data":["a herd of horses running down a dirt road "],"duration":2.075080633163452,"average_duration":2.274831804256735}
+```
