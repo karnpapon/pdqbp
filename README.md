@@ -1,5 +1,33 @@
 ### [`pdqbp`](/about.md)
 
+<table><tr><td colspan="2"><img src="./output/2023-08-02_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+
+```json
+{
+  "2023-08-02": {
+    "data": [
+      "two cows standing next to each other "
+    ],
+    "duration": 1.807694673538208,
+    "average_duration": 2.37623595970051
+  }
+}
+```
+</td><td>
+
+```json
+{
+  "2023-08-02": {
+    "left-region": 10,
+    "center-region": 7,
+    "right-region": 0,
+    "overlap-region": 320,
+    "diffusion-steps": 39,
+    "random-seed": 2945298808366131
+  }
+}
+```
+</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 154</td></table>
 <table><tr><td colspan="2"><img src="./output/2023-08-01_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
