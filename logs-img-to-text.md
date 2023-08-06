@@ -463,3 +463,6 @@
 ```json
 "2023-08-03":{"data":["cows standing in a field "],"duration":1.46506929397583,"average_duration":2.3768905172321797}
 ```
+```json
+"2023-08-06":{"data":["cows are grazing in a field "],"duration":1.6244642734527588,"average_duration":2.3780431649667713}
+```
