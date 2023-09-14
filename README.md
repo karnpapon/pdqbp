@@ -1,5 +1,33 @@
 ### [`pdqbp`](/about.md)
 
+<table><tr><td colspan="2"><img src="./output/2023-09-14_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+
+```json
+{
+  "2023-09-14": {
+    "data": [
+      "a large white sheet of paper with a bunch of colorful birds on it "
+    ],
+    "duration": 2.2098019123077393,
+    "average_duration": 2.0465404516689962
+  }
+}
+```
+</td><td>
+
+```json
+{
+  "2023-09-14": {
+    "left-region": 1,
+    "center-region": 4,
+    "right-region": 6,
+    "overlap-region": 232,
+    "diffusion-steps": 34,
+    "random-seed": 5876817347160219
+  }
+}
+```
+</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 159</td></table>
 <table><tr><td colspan="2"><img src="./output/2023-08-14_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
