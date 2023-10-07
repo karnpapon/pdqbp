@@ -481,3 +481,6 @@
 ```json
 "2023-10-04":{"data":["a wall with a wall of graffiti on it "],"duration":12.112839698791504,"average_duration":2.9837551667581295}
 ```
+```json
+"2023-10-07":{"data":["a wall with graffiti on it with graffiti on it "],"duration":4.325101613998413,"average_duration":3.525459905187069}
+```
