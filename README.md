@@ -1,5 +1,33 @@
 ### [`pdqbp`](/about.md)
 
+<table><tr><td colspan="2"><img src="./output/2023-10-15_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
+
+```json
+{
+  "2023-10-15": {
+    "data": [
+      "a wall with graffiti on it with graffiti on it "
+    ],
+    "duration": 63.84068703651428,
+    "average_duration": 106.18186246916012
+  }
+}
+```
+</td><td>
+
+```json
+{
+  "2023-10-15": {
+    "left-region": 5,
+    "center-region": 7,
+    "right-region": 11,
+    "overlap-region": 144,
+    "diffusion-steps": 16,
+    "random-seed": 7783268656169030
+  }
+}
+```
+</td></tr><tr colspan="2"></tr></tr><td colspan="2"><b>iterations</b> : 163</td></table>
 <table><tr><td colspan="2"><img src="./output/2023-10-07_output.jpeg"></td></tr></tr><tr colspan="2"><tr></tr><td>
 
 ```json
